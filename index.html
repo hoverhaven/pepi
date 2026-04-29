@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Motos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🏍️ Catálogo de Motos</h1>
+
+  <div class="controls">
+    <input type="text" id="buscador" placeholder="Buscar moto...">
+
+    <select id="filtro">
+      <option value="todos">Todas</option>
+      <option value="sport">Sport</option>
+      <option value="naked">Naked</option>
+      <option value="touring">Touring</option>
+      <option value="enduro">Enduro</option>
+    </select>
+  </div>
+</header>
+
+<main id="catalogo"></main>
+
+<!-- INFO -->
+<section class="info">
+  <h2>Guía de motos</h2>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>🏁 Sport</h3>
+      <p>Motos rápidas, aerodinámicas y agresivas.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🛵 Naked</h3>
+      <p>Estilo urbano, cómodas y versátiles.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🌍 Touring</h3>
+      <p>Diseñadas para viajes largos y confort.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏔️ Enduro</h3>
+      <p>Preparadas para tierra y caminos difíciles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="cerrar">&times;</span>
+    <img id="modal-img">
+    <h2 id="modal-titulo"></h2>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
